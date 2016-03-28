@@ -23,6 +23,10 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
+gem 'delayed_job_active_record'
+
+
+
 group :production do
   gem "pg"
   gem "rails_12factor"
@@ -58,6 +62,8 @@ gem "letter_opener", group: :development
 gem "pay2go"
 
 gem "figaro"
+
+gem "fog"
 
 group :production do
   gem "pg"
